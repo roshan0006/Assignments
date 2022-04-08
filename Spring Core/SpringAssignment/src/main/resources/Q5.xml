@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<bean id = "Customer1" class="Question5.Customer">
+		<property name="customerId" value = "123" />
+		<property name="customerName" value = "Max" />
+		<property name="customerContact" value = "945789965" />
+	</bean>
+	
+	<bean id = "Customeradd" class="Question5.Address" >
+		<property name="street" value = "Avadi"/>
+		<property name="city" value = "Chennai"/>
+		<property name="state" value = "Tamil Nadu"/>
+		<property name="zip" value = "530001"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	<bean id = "Customeradd1" class="Question5.Address" >
+		<property name="street" value = "--------Porur"/>
+		<property name="city" value = "Chennai"/>
+		<property name="state" value = "Tamil Nadu"/>
+		<property name="zip" value = "600142"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	  <context:annotation-config/>
+	
+<!-- 	<bean id= "Customer2" class = "Question5.Customer">
+		<constructor-arg name="customerId" value = "1234"/>
+		<constructor-arg name="customerName" value = "Muller"/>
+		<constructor-arg name="customerContact" value = "8452365789"/>
+		<constructor-arg name="customerAddress" ref="Customeradd1"/>
+	</bean>
+	
+	<bean id = "Customeradd1" class="Question5.Address" >
+		<constructor-arg name="street" value = "Adayar"/>
+		<constructor-arg name="city" value = "Chennai"/>
+		<constructor-arg name="state" value = "Tamil Nadu"/>
+		<constructor-arg name="zip" value = "600152"/>
+		<constructor-arg name="country" value = "India"/>
+	</bean> -->
+</beans>
