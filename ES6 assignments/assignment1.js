@@ -1,6 +1,6 @@
 Q1 
 var c = "Roshan";
-console.log(c + " intial Value"); //Balaji
+console.log(c + " intial Value"); 
 c = "S S"; // Changing the value of const c :
 Q2 : 
 var str = "Roshan";
